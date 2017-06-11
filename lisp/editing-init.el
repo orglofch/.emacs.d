@@ -34,4 +34,6 @@
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
+(add-hook 'before-save-hook 'whitespace-cleanup)
+
 (provide 'editing-init)
