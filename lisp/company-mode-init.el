@@ -3,6 +3,7 @@
 
 (require 'elpa-init)
 (require-package 'company)
+
 (require 'company)
 
 (setq company-tooltip-align-annotations t)

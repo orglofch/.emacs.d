@@ -25,4 +25,7 @@
 
 (golden-ratio-mode 1)
 
+;; Rotate between common file (e.g., .h -> .cc).
+(global-set-key (kbd "C-c r") 'ff-find-other-file)
+
 (provide 'ui-init)

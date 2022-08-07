@@ -20,7 +20,7 @@
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 (add-hook 'rust-mode-hook 'cargo-minor-mode)
 
-;; Rust Racer.
+;; Code completion.
 (setq racer-cmd "~/.cargo/bin/racer")
 (setq racer-rust-src-path "/Users/orglofch/rust/src")
 (add-hook 'rust-mode-hook #'racer-mode)
@@ -28,10 +28,10 @@
 (add-hook 'racer-mode-hook #'company-mode)
 (local-set-key (kbd "TAB") #'company-indent-or-complete-common)
 
-;; Rust Fmt.
+;; Formatting
 (add-hook 'rust-mode-hook #'rust-format-buffer)
 
-;; Rust Flycheck.
+;; Syntax checking.
 (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
 (electric-pair-mode 1)
 
